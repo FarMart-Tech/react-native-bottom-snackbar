@@ -1,0 +1,42 @@
+{
+  "name": "react-native-bottom-snackbar",
+  "version": "1.0.0",
+  "description": "snackbar component for react-native (android/ios)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "react-native-bottom-snackbar",
+    "react-native-snackbar",
+    "bottom-snackbar",
+    "snackbar"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": {
+    "name": "sandeep mishra",
+    "email": "sandeepkumarmishra354@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "",
+    "email": "sandeepkumarmishra354@gmail.com"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@types/react": "^17.0.39",
+    "@types/react-native": "^0.66.15"
+  }
+}
