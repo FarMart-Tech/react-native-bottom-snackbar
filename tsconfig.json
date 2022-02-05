@@ -1,24 +1,27 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "target": "ESNext",
-    "moduleResolution": "Node",
-    "sourceMap": true,
+    "module": "esnext",
+    "target": "es5",
+    "moduleResolution": "node",
     "outDir": "./dist",
+    "jsx": "react-native",
+    "lib": ["es6", "dom", "es2016", "es2017"],
+    "typeRoots": ["./node_modules/@types", "./@types"],
+    "sourceMap": true,
+    "esModuleInterop": true,
     "alwaysStrict": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
     "declaration": true,
     "strict": true,
+    "skipLibCheck": true,
     "strictFunctionTypes": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true
   },
-  "lib": [
-    "es2019"
-  ],
-  "include": [
-    "src/**/*"
-  ]
+  "exclude": ["node_modules", "dist"],
+  "lib": ["es2019"],
+  "include": ["./src"]
 }

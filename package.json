@@ -6,7 +6,9 @@
   "types": "dist/index.d.ts",
   "private": false,
   "scripts": {
+    "prepare": "tsc",
     "build": "tsc",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,24 +21,25 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/sandeepkumarmishra354/react-native-bottom-snackbar"
   },
   "author": {
     "name": "sandeep mishra",
-    "email": "sandeepkumarmishra354@gmail.com"
+    "email": ""
   },
   "license": "MIT",
   "bugs": {
-    "url": "",
+    "url": "https://github.com/sandeepkumarmishra354/react-native-bottom-snackbar/issues",
     "email": "sandeepkumarmishra354@gmail.com"
+  },
+  "homepage": "https://github.com/sandeepkumarmishra354/react-native-bottom-snackbar#readme",
+  "devDependencies": {
+    "@types/react": "^17.0.39",
+    "@types/react-native": "^0.66.15",
+    "typescript": "^4.5.5"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
-  },
-  "homepage": "",
-  "devDependencies": {
-    "@types/react": "^17.0.39",
-    "@types/react-native": "^0.66.15"
   }
 }
