@@ -46,7 +46,7 @@ const someFunction = () => {
     });
 }
 ```
-![demo screenshot](/screenshot/info.jpeg)
+![demo screenshot](/screenshot/info-img.jpeg)
 
 #### AlertBottomSnackbar Props
 ```jsx
