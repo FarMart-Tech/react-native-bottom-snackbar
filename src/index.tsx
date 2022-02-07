@@ -13,8 +13,8 @@ const AlertBottomSnackbar = (props: ISnackbarComponentProps) => (
 
 /**
  * @param message The message that you want to show.
- * @param onClose callback will run only if snackbar get closed automatically.
  * @param type Type must be any of these: "normal", "error", "success", "info", "warn" DEFAULT: "normal".
+ * @param onClose callback will run only if snackbar get closed automatically.
  */
 AlertBottomSnackbar.show = (message: string, type: SnackbarType = "normal", onClose?: () => void) => {
     _snackbarRef.current?.show({
