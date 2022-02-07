@@ -1,10 +1,10 @@
 {
   "name": "react-native-bottom-snackbar",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "snackbar component for react-native (android/ios)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "private": true,
+  "private": false,
   "scripts": {
     "prepare": "tsc",
     "build": "tsc",
