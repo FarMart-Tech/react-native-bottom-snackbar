@@ -1,12 +1,12 @@
 /* eslint-disable */
 import React, { createRef } from 'react';
-import { SnackbarComponent, SnackbarType, ISnackbarComponentProps, SnackbarOption } from './AlertComponent';
+import {
+    SnackbarComponent, SnackbarType,
+    ISnackbarComponentProps, SnackbarOption
+} from './AlertComponent';
 
 const _snackbarRef = createRef<SnackbarComponent>();
 
-/**
- * @param colorError set color for error message
- */
 const AlertBottomSnackbar = (props: ISnackbarComponentProps) => (
     <SnackbarComponent ref={_snackbarRef} {...props} />
 );
@@ -24,6 +24,9 @@ AlertBottomSnackbar.show = (message: string, type: SnackbarType = "normal", onCl
     });
 }
 
+/**
+ * closes all opened snackbar.
+ */
 AlertBottomSnackbar.close = () => {
     _snackbarRef.current?.close();
 }

@@ -20,22 +20,67 @@ interface State {
 }
 
 export interface ISnackbarComponentProps {
+    /**
+     * Style for snackbar container.
+     */
     style?: StyleProp<ViewStyle>,
+    /**
+     * Style for text component used in snackbar.
+     */
     labelStyle?: StyleProp<TextStyle>,
+    /**
+     * This color will be used if message type=error
+     * Default: "#B4161B"; // redish
+     */
     colorError?: string,
+    /**
+     * This color will be used if message type=normal
+     * Default: "#242B2E"; // blackish
+     */
     colorNormal?: string,
+    /**
+     * This color will be used if message type=success
+     * Default: "#1FAA59"; // greenish
+     */
     colorSuccess?: string,
+    /**
+     * This color will be used if message type=info
+     * Default: "#1B98F5"; // blueish
+     */
     colorInfo?: string,
+    /**
+     * This color will be used if message type=warn
+     * default: "#E07C24"; // orange
+     */
     colorWarn?: string,
+    /**
+     * Duration of snackbar in ms.
+     * Default: 3000 ms (3 seconds).
+     */
     duration?: number,
+    /**
+     * Number of lines for text component.
+     * Default: 2
+     */
     numberOfLines?: number
 }
 
 export type SnackbarType = "normal" | "error" | "success" | "info" | "warn";
 // export type ToastPosition = "bottom" | "top" | "center";
 export type SnackbarOption = {
+    /**
+     * Text to display as snackbar message.
+     */
     message: string,
+    /**
+     * Possible values: "normal" | "error" | "success" | "info" | "warn"
+     * Default: "normal"
+     */
     type?: SnackbarType,
+    /**
+     * An optional callback.
+     * When snackbar gets closed this callback will be invoked.
+     */
     onClose?: () => void
 }
 
