@@ -1,9 +1,10 @@
 {
   "name": "react-native-bottom-snackbar",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "snackbar component for react-native (android/ios)",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
   "private": false,
   "scripts": {
     "prepare": "tsc",
@@ -21,7 +22,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sandeepkumarmishra354/react-native-bottom-snackbar"
+    "url": "https://github.com/FarMart-Tech/react-native-bottom-snackbar"
   },
   "author": {
     "name": "sandeep mishra",
@@ -29,10 +30,10 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sandeepkumarmishra354/react-native-bottom-snackbar/issues",
+    "url": "https://github.com/FarMart-Tech/react-native-bottom-snackbar/issues",
     "email": "sandeepkumarmishra354@gmail.com"
   },
-  "homepage": "https://github.com/sandeepkumarmishra354/react-native-bottom-snackbar#readme",
+  "homepage": "https://github.com/FarMart-Tech/react-native-bottom-snackbar#readme",
   "devDependencies": {
     "@types/react": "^17.0.39",
     "@types/react-native": "^0.66.15",
